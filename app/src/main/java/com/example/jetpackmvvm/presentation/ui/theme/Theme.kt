@@ -1,4 +1,4 @@
-package com.example.jetpackmvvm.ui.theme
+package com.example.jetpackmvvm.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
