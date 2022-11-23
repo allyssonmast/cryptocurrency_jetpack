@@ -30,7 +30,7 @@ class CoinDetailViewModel @Inject constructor(
         getCoinUseCase(coinId).onEach { resource ->
             when(resource){
                 is Resource.Success ->{
-                    _state.value= CoinDetailState(coins = resource.data)
+                    _state.value= CoinDetailState(coin = resource.data)
                 }
                 is Resource.Error ->{
                     _state.value= CoinDetailState(error = resource.message?:"An error occured")
